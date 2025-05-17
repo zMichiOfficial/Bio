@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mi Página Gaming Profesional</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap');
+
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(15, 12, 41, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 30px #8a2be2;
+    padding: 40px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #8a2be2;
+    text-shadow: 0 0 12px #ab82ff;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 8px;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  /* Bio section */
+  .bio {
+    background: #1e1b4a;
+    border: 2px solid #8a2be2;
+    border-radius: 12px;
+    padding: 25px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d0cfff;
+    box-shadow: 0 0 15px #7a72cc;
+  }
+
+  /* Juegos section */
+  .games-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.4rem;
+    color: #8a2be2;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px #ab82ff;
+    text-align: center;
+  }
+
+  .games-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .game-card {
+    background: #1e1b4a;
+    border: 2px solid #8a2be2;
+    border-radius: 15px;
+    width: 170px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 12px #7a72cc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+
+  .game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #ad92ff;
+  }
+
+  .game-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 5px #8a2be2);
+  }
+
+  .game-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #b395ff;
+    font-size: 1.3rem;
+    text-shadow: 0 0 8px #c2a9ff;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #8a8a8a;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .games-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>SoyMichiiii</h1>
+      <p>Bienvenido a mi biografia gaming</p>
+    </header>
+    <section class="bio-section" aria-label="Sección Sobre mí">
+      <div class="bio">
+        <p>
+          Hola, soy Michi un chaval que le encanta jugar juegos gaming y aprender juego varios juegos como Roblox, Valorant y Minecraft
+        </p>
+      </div>
+    </section>
+    <section class="games-section" aria-label="Sección Juegos que juego">
+      <h2>Juegos que Juego</h2>
+      <div class="games-list">
+        <article class="game-card" tabindex="0" aria-label="Juego Roblox">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg" alt="Logotipo de Roblox" />
+          <h3>Roblox</h3>
+        </article>
+        <article class="game-card" tabindex="0" aria-label="Juego Valorant">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwwMbaM9KdqPxESo4-JF87bfEGz6O0lQVRaw&s" alt="Logotipo de Valorant" />
+          <h3>Valorant</h3>
+        </article>
+        <article class="game-card" tabindex="0" aria-label="Juego Minecraft">
+          <img src="https://images.icon-icons.com/2699/PNG/512/minecraft_logo_icon_168974.png" alt="Logotipo de Minecraft" />
+          <h3>Minecraft</h3>
+        </article>
+      </div>
+    </section>
+    <footer>
+      &copy; 2025 Michi. Todos los derechos reservados.
+    </footer>
+  </div>
+</body>
+</html>
